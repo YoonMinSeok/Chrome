@@ -1,12 +1,9 @@
-const a =5;
-const b = 2;
-let myName = "minseok";
+const player = {
+    name : "minseok",
+    sayHello : function(otherPersonName){
+        console.log("hello " + otherPersonName + " nice to meet you")
+    },
+}
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello" + myName);
-
-myName = "YunminSoek";
-
-console.log("your new name is " + myName);
+player.sayHello("lynn");
+player.sayHello("yun");
