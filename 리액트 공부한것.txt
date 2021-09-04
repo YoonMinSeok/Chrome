@@ -1,0 +1,92 @@
+
+
+current가 뭔지
+current = 흐름이라는 뜻이다
+current 속성을 가질수 있다
+
+DOM 이란
+가장 기본적인 수준에서 웹사이트는 HTML 문서로 구성됩니다. 웹사이트를 보기 위해 사용하는 브라우저는 HTML과 CSS를 해석하고 보는 페이지에 스타일, 콘텐츠 및 구조를 렌더링하는 프로그램입니다.
+
+react props란?
+props는 속성을 나타내는 데이터이다.
+컴포넌트 끼리 값을 전달하는 수단이다.
+
+react hook란?
+
+-useeffet: 함수형 컴포넌트에서도 가변적인 상태를 지니고 있을 수 있게 해준다.
+
+-usestate : 리액트 컴포넌트가 렌더링 될 때마다 특정 작업을 수행하도록 설정할 수 있는 기능이다.
+
+react hooks dependency
+= useEffect 안에는 state, props, 함수 등의 모든 값은 dependency 배열로 존재한다.
+
+ref = DOM에 이름 달기
+쉽게 말해 DOM요소에만 스타일을 따로 적용할수 있는 방법
+
+react lifecycle?
+
+3가지 부분 으로 나뉨
+Mount - Updating - Unmounting
+
+Mount 
+컴포넌트가 처음 실행될 때 그것을 Mount라고 표현합니다. 
+ 1.state, context, defaultProps 저장
+ 2.componentWillMount
+ 3.render
+ 4.componentDidMount
+
+Props Update
+ props가 업데이트 될 때의 과정입니다.
+ 1.componentWillReceiveProps
+ 2.shouldComponentUpdate
+ 3.componentWillUpdate
+ 4.render
+ 5.componentDidUpdate
+
+State Update
+setState 호출을 통해 state가 업데이트될 때의 과정입니다. props update와 과정이 같지만, componentWillReceiveProps 메소드는 호출되지 않습니다. 그리고 메소드의 두 번째 인자로는 바뀔 state에 대한 정보를 가지고 있습니다. componentDidUpdate는 두 번째 인자로 바뀌기 이전의 state에 대한 정보를 가지고 있습니다.
+ 1.shouldComponentUpdate
+ 2.componentWillUpdate
+ 3.render
+ 4.componentDidUpdate
+
+Unmount
+ 컴포넌트가 제거되는 것을 표현합니다. 더는 컴포넌트를 사용하지 않을 때 발생하는 이벤트가 있스빈다. 
+
+ 1.componentWillUnmount
+
+
+js babel
+js로 결과물을 만들어주는 컴파일러
+버전에 낮은 브라우저들도 같이 사용할수 호환가능하게 하는 것
+
+instanse static 차이
+Static method는 클래스 변수와 마찬가지로
+객체를 생성하지 않고 클래스명.메서드명으로 호출 가능하다.
+
+Instance method는 Static method와는 달리, 반드시 객체를 생성한 후에 호출 가능하다.
+즉, Instance method는 인스턴스가 반드시 존재해야만 사용할 수 있다.
+모든 인스턴스에 공통된 값을 유지해야 할 필요가 있을 경우에는 Static을 붙여준다.
+
+
+●함수형 컴포넌트와 클래스 컴포넌트 차이
+
+-클래스 컴포넌트
+ 1.class 키워드 필요
+ 2.Component로 상속을 받아야한다
+ 3.render() 메소드가 반드시 있어야한다.
+-함수형 컴포넌트
+ 1.const,function 키워드 필요
+ 2.Component로 상속을 필요 x
+ 3.render() 메소드가 필요 x
+2) 일반적 차이
+클래스형 :
+state, lifeCycle 관련 기능사용 가능하다.
+메모리 자원을 함수형 컴포넌트보다 조금 더 사용한다.
+임의 메서드를 정의할 수 있다.
+함수형 :
+state, lifeCycle 관련 기능사용 불가능 [Hook을 통해 해결 됨]
+메모리 자원을 함수형 컴포넌트보다 덜 사용한다.
+컴포넌트 선언이 편하다.
+
+axios 가 뭔지
